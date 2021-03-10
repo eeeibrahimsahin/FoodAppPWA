@@ -67,6 +67,8 @@
     protected void GetById()
     {
         Food = Foods.FirstOrDefault(f => f.Name == SearchTerm.ToUpper());
+        ShowDetail = false;
+        StateHasChanged();
     }
     protected void ClickHandler()
     {
